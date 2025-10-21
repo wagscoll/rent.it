@@ -16,7 +16,7 @@
     <main class="container">
 
         <aside class="sidebar">
-            <h2 style="text-align: center; text-decoration: underline;;">Filter Listings</h2>
+            <h2 style="text-align: center; text-decoration: underline ;">Filter Listings</h2>
             <form>
 
                 <!-- SIDEBAR - SEARCH -->
@@ -102,11 +102,21 @@
         <!-- Main content - Card Selection -->
         <section class="main-content">
 
-            <h2 style="color:#ffffff; text-indent: 40px; font-size: 1.8em; color: #55ffd4d8">Featured Listings</h2>
+            <div class="title-bar" style="text-indent: 40px; font-size: 1.1em; color:
+             #55ffd4d8; display: flex; flex-direction: row; align-items: center; 
+             gap: 800px; margin-bottom: 20px;">
+                <h1 style="text-align: flex-start;">Featured Listings</h1>
 
-            <div class="outer-grid-border" 
+                <div style="text-align: center; font-size: 1.9em; color: black;">
+                    <button onclick="window.location.href='../pages/add-post.php'">Add New Listing</button>
+                </div>
 
-            style="padding: 15px; border: 4px solid #55ffd40b; border-radius: 8px; 
+
+            </div>
+
+            <div class="outer-grid-border"
+
+                style="padding: 15px; border: 4px solid #55ffd40b; border-radius: 8px; 
             max-width: 1200px; margin: auto; display: inline-block; 
              margin-bottom: 40px;">
 
