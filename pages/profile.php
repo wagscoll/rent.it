@@ -16,9 +16,11 @@
 
 
 
+    <div class="filler" style="color: green; text-align: center; margin-top: 100px;">
     <h1>Manage your Preferences</h1>
-    <p>This heading should not be visible if you are not logged in.</p>
+    <p>! This heading should not be visible if you are not logged in. !</p>
     <p>Here you can view and manage your preferences.</p>
+    </div>
     
     <?php include '../templates/footer.php'; ?>
 </body>

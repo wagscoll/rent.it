@@ -11,8 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
   found at: https://www.geeksforgeeks.org/javascript/price-range-slider-with-min-max-input-using-html-css-and-javascript/
 
   */
-
-
   function updateProgress(min, max) {
     const maxRange = parseInt(rangeInputs[0].max);
     const minPercent = (min / maxRange) * 100;

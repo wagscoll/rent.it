@@ -115,6 +115,66 @@ button:hover {
     background-color: #555;
 }
 
+.listing-added-confirmation {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 9999;
+}
+
+/*
+found at https://www.w3schools.com/css/css3_animations.asp
+and: https://stackoverflow.com/questions/39646065/make-notification-bar-slide-up-from-the-bottom
+*/
+
+.listing-added-confirmation .card {
+  background-color: #222;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  animation: fadeSlide 3s ease forwards;
+  opacity: 0; 
+}
+
+@keyframes fadeSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+
+.form-section-title {
+    width: 100%;
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #000000;
+    text-indent: 5%;
+    margin-bottom: 3px;
+    border: #000000 1px dashed;
+    text-align: center;
+}
+
+
+.form-entry {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+    background-color: #b7b7b7;
+}
 
 
 

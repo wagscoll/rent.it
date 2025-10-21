@@ -5,7 +5,7 @@
     position: sticky;
     top: 20px;
     padding: 15px;
-    background-color: #b7b7b7;
+    background-color: #55ffd459;
     border: 1px solid #00000032;
     border-radius: 6px;
     height: fit-content;
@@ -38,7 +38,7 @@
     display: flex;
     flex-direction: column; 
     gap: 10px;
-    background-color: #b7b7b7;
+    background-color: #fafafa00;
 }
 
 .sidebar input,
@@ -66,7 +66,7 @@
     
 }
 
-/* Slider Container, colored fill */
+
 .slider .progress {
     position: absolute;
     height: 90%;
@@ -80,11 +80,11 @@
 
 }
 
-/* Range Inputs (thumbs only) */
+
 .range-input {
     position: relative;
     height: 16px;
-    margin-top: -16px; /* overlap progress */
+    margin-top: -16px;
 }
 
 .range-input input {
@@ -98,7 +98,7 @@
     transform: translateY(-50%);
     background: transparent;
     z-index: 2;
-    pointer-events: none; /* Disable pointer events on the entire input */
+    pointer-events: none; 
 }
 
 input[type="range"]::-webkit-slider-thumb {
@@ -120,9 +120,8 @@ input[type="range"]::-moz-range-thumb {
     z-index: 3;
 }
 
-/* Hide native tracks completely */
 .range-input input::-webkit-slider-thumb {
-  pointer-events: auto; /* allow thumb to be draggable */
+  pointer-events: auto;
 }
 
 .range-input input::-moz-range-thumb {
