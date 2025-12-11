@@ -1,63 +1,92 @@
-/* Card Styles*/
-
+/* ---------------------------
+        CARD GRID
+---------------------------- */
 .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
 }
 
+/* ---------------------------
+        CARD
+---------------------------- */
 .card {
-    flex: 0 0 250px;
-    border: .5px solid #15001a90;
-    border-radius: 8px;
-    background: linear-gradient(0deg, #1B1D24, #55ffd47e); /*#55ffd44f*/
-    padding: 15px;
-    box-shadow: 1px 2px 4px rgba(33, 33, 33, 0.248);
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.card-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    color: #000000;
-    letter-spacing: 1px;
-}
-
-.card h3 {
-    margin: 0;
-    font-size: 1.2rem;
-    color: #000000da;
-}
-
-.card-header .rating {
-    margin-left: auto; 
-    font-size: .95rem;
-    color: #8f6b17; 
-    text-shadow: 2px 2px 2px #00000092;
-    
-    font-weight: bold;
-}
-
-.card img {
-  display: block;
-  margin-top: 20px;
-  margin-bottom: 25px;
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 6px;
-}
-
-.card p {
-    font-weight: bold;
-    color: #f0f0f0fc;
-    margin: 0;
-    text-align: left;
+  flex: 0 0 250px;
+  border-radius: 10px;
+  padding: 20px;
+  background: linear-gradient(180deg, #1a1c22, #55ffd438);
+  border: 1px solid #55ffd480;
+  box-shadow: 0 0 8px rgba(85, 255, 212, 0.25);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .card:hover {
-    transform: translateY(-7px);
-    box-shadow: 8px 8px 12px rgba(0,0,0,0.15);
+  transform: translateY(-4px);
+  box-shadow: 0 0 8px rgba(85, 255, 212, 0.3);
+}
+
+/* ---------------------------
+        CARD HEADER
+---------------------------- */
+.card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.card-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #eadfdf;
+}
+
+.card-header .rating {
+  margin-left: auto;
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: #8f6b17;
+}
+
+/* ---------------------------
+        CARD IMAGE
+---------------------------- */
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(85, 255, 212, 0.35);
+  box-shadow: 0 0 8px rgba(85, 255, 212, 0.25);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover img {
+  transform: scale(1.03);
+  box-shadow: 0 0 18px rgba(85, 255, 212, 0.45);
+}
+
+/* ---------------------------
+        CARD TEXT
+---------------------------- */
+.card p {
+  font-weight: bold;
+  color: #f0f0f0;
+  margin: 0;
+}
+
+/* ---------------------------
+        CARD BUTTON
+---------------------------- */
+.actions button {
+  background-color: #55ffd4;
+  color: #000;
+  border: none;
+  font-weight: bold;
+  box-shadow: 0 0 8px rgba(85, 255, 212, 0.3);
+}
+
+.actions button:hover {
+  background-color: #7effe2;
 }

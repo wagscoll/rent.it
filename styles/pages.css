@@ -1,0 +1,117 @@
+/***********************************************
+            PROFILE PAGE
+************************************************/
+.profile-wrapper { max-width: 700px; margin: 60px auto; }
+.profile-card {
+  padding: 25px 30px;
+  border-radius: 10px;
+  border: 2px solid #55ffd4a0;
+  background: rgba(33, 33, 33, 0.85);
+  box-shadow: 0 0 15px rgba(85, 255, 212, 0.25);
+  color: #f0f0f0;
+}
+.profile-card h1 { color: #55ffd4; margin-bottom: 20px; }
+.profile-item { margin-bottom: 10px; }
+.profile-label { font-weight: bold; color: #ccc; }
+.profile-links { margin-top: 25px; display: flex; gap: 10px; }
+
+/***********************************************
+            DELETE LISTING PAGE
+************************************************/
+.delete-wrapper { display: flex; justify-content: center; margin-top: 120px; }
+.delete-card {
+  width: 550px; padding: 35px;
+  border-radius: 12px;
+  border: 2px solid #ff6b6b80;
+  background: rgba(40, 0, 0, 0.6);
+  box-shadow: 0 0 20px rgba(255, 80, 80, 0.25);
+  color: #ffeaea;
+  backdrop-filter: blur(10px);
+}
+.delete-actions { display: flex; justify-content: space-between; }
+
+/***********************************************
+            EDIT LISTING
+************************************************/
+.edit-wrapper { display: flex; justify-content: center; margin-top: 80px; }
+.edit-card {
+  width: 600px;
+  padding: 35px;
+  border-radius: 12px;
+  border: 2px solid #55ffd4a0;
+  background: rgba(33, 33, 33, 0.7);
+  box-shadow: 0 0 15px rgba(85, 255, 212, 0.25);
+  color: white;
+}
+
+/***********************************************
+            MY LISTINGS
+************************************************/
+.mylist-title-bar {
+  text-indent: 40px;
+  font-size: 1.1em;
+  color: #55ffd4d8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mylist-thumbnail {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/***********************************************
+            MY REQUESTS
+************************************************/
+.req-wrapper { max-width: 900px; margin: 60px auto; }
+.req-card {
+  padding: 25px;
+  margin-bottom: 20px;
+  background: rgba(33, 33, 33, 0.75);
+  border: 2px solid #55ffd440;
+  box-shadow: 0 0 12px #55ffd420;
+  color: #eaeaea;
+  border-radius: 12px;
+}
+.status { font-weight: bold; padding: 5px 10px; border-radius: 4px; }
+.status.pending { color: #c8a300; }
+.status.approved { color: #00d46a; }
+.status.denied { color: #ff6b6b; }
+
+/***********************************************
+            OWNER REQUESTS
+************************************************/
+.owner-req-title { text-align: center; color: #55ffd4; margin-bottom: 30px; }
+.owner-action-btn { padding: 10px 16px; border-radius: 6px; font-weight: bold; }
+
+/***********************************************
+            CREATE LISTING
+************************************************/
+.create-wrapper { display: flex; justify-content: center; margin-top: 80px; }
+.create-card {
+  width: 600px; padding: 35px;
+  border-radius: 12px;
+  border: 2px solid #55ffd4a0;
+  background: rgba(33, 33, 33, 0.7);
+  box-shadow: 0 0 15px rgba(85, 255, 212, 0.25);
+  color: white;
+}
+.create-error { color: #ff8b8b; }
+
+/***********************************************
+            REQUEST RENTAL PAGE
+************************************************/
+.request-card {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 25px;
+  border-radius: 12px;
+  background: rgba(33, 33, 33, 0.75);
+  box-shadow: 0 0 15px rgba(85, 255, 212, 0.25);
+  border: 1px solid #55ffd450;
+}
+
+.request-card h2 { color: #55ffd4; }
