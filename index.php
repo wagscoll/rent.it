@@ -35,7 +35,7 @@ $stmt->close();
 
 <main class="container">
 
-    <!-- ===== SIDEBAR FILTER ===== -->
+    <!--SIDEBAR FILTER -->
     <aside class="sidebar">
         <h2 class="filter-title">Filter</h2>
 
@@ -77,27 +77,19 @@ $stmt->close();
                 <input type="number" id="priceMax" placeholder="Max $" min="0">
             </div>
 
-            <!-- Applied live search filtering
-            <div class="sidebar-btn-row">
-                <button type="button" onclick="applyFilters()">Apply Filters</button>
-            </div>
-
-            <div class="sidebar-btn-row">
-                <button type="button" onclick="clearFilters()">Clear</button>
-            </div>
-            -->
-
         </form>
     </aside>
 
 
-    <!-- ===== MAIN CONTENT ===== -->
+    <!-- MAIN CONTENT - Listings -->
 <section class="main-content">
 
     <div class="neon-title">
         <h1>Featured Listings</h1>
 
         <div style="margin-right: 80px;">
+
+            <!-- if logged in, show add listing button -->
         <?php if (isset($_SESSION['user_id'])): ?>
             <button onclick="window.location.href='/rent.it/listing/create_listing.php'">
                 Add New Listing
@@ -112,6 +104,7 @@ $stmt->close();
 
                 <?php if ($result->num_rows > 0): ?>
 
+                    <!-- Loop through listings -->
                     <?php while ($row = $result->fetch_assoc()): ?>
 
                         <?php
@@ -126,7 +119,7 @@ $stmt->close();
                             data-price="<?= (int)$row['price_per_day'] ?>">
 
                             <div class="card-header">
-                                <h3><?= sanitize($row['title']) ?></h3>
+                                <h3><?= sanitize($row['title']) ?></h3>                 <!-- $ /day -->
                                 <span class="rating">$<?= number_format($row['price_per_day'], 2) ?>/day</span>
                             </div>
 

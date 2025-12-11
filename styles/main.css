@@ -1,6 +1,6 @@
-/* ---------------------------
-      GLOBAL RESET
----------------------------- */
+
+
+
 ul {
   margin: 0;
   padding: 0;
@@ -13,9 +13,6 @@ body {
   background-color: #15171c;
 }
 
-/* ---------------------------
-        LAYOUT WRAPPERS
----------------------------- */
 .container {
   display: flex;
   gap: 20px;
@@ -27,9 +24,7 @@ body {
   flex: 1;
 }
 
-/* ---------------------------
-        FORM BASICS
----------------------------- */
+
 form {
   display: flex;
   flex-direction: column;
@@ -59,9 +54,7 @@ button:hover {
   background-color: #555;
 }
 
-/* ---------------------------
-        FLASH MESSAGES
----------------------------- */
+/* FLASH MESSAGES */
 .flash-message {
   max-width: 900px;
   margin: 20px auto;
@@ -91,15 +84,14 @@ button:hover {
   border: 2px solid #7aa8ff;
 }
 
+/*implemented from: https://stackoverflow.com/questions/73705828/use-keyframes-animation-to-blink-but-also-preserve-original-colour*/
 @keyframes flashFade {
   0% { opacity: 1; }
   70% { opacity: 1; }
   100% { opacity: 0; }
 }
 
-/* ---------------------------
-        HEADER + NAV
----------------------------- */
+/* HEADER + NAVIGATION */
 .site-header {
   width: 100%;
   background: rgba(85, 255, 212, 0.08);
@@ -163,9 +155,7 @@ button:hover {
   opacity: 0.85;
 }
 
-/* ---------------------------
-        SIDEBAR FILTER
----------------------------- */
+/* SIDEBAR FILTER */
 .sidebar {
   flex: 0 0 250px;
   padding: 20px;
@@ -231,7 +221,6 @@ form textarea:focus {
   box-shadow: 0 0 8px rgba(85, 255, 212, 0.5);
 }
 
-/* Outer listing grid decoration */
 .outer-grid-border {
   padding: 15px;
   border-radius: 10px;
